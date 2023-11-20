@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
-
+  isOpenUiElements:boolean = false;
+  public openUiElements() {
+    this.isOpenUiElements = !this.isOpenUiElements;
+  }
 }

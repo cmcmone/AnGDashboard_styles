@@ -1,0 +1,26 @@
+$small: 599px;
+$medium: 959px;
+$large: 1279px;
+
+.layout {
+  width: 100%;
+}
+
+.layout-sidebar {
+  height:calc(100vh - 64px);
+  margin-top: 64px;
+
+  @media (max-width: $small) {
+    width: 218px;
+  }
+}
+
+.layout-content {
+  background-color: #edf1f7;
+  height:calc(100vh - 64px);
+  margin-top: 64px;
+
+  @media (max-width: $small) {
+    width: 100%;
+  }
+}
